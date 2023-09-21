@@ -1,6 +1,17 @@
 package org.example;
 
+/**
+ * The PrimeChecker class provides a method for checking if a given number is prime.
+ */
 public class PrimeChecker{
+
+    /**
+     * Checks if the given number is prime.
+     *
+     * @param a The number to be checked.
+     * @return true if the number is prime, false otherwise.
+     * @throws Exception If the given number is less than 0.
+     */
     boolean isPrime(int a) throws Exception {
         if (a < 0)
             throw new Exception("given argument < 0");
@@ -14,6 +25,5 @@ public class PrimeChecker{
                     return false;
             }
         return true;
-
     }
 }
